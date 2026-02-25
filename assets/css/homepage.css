@@ -56,11 +56,11 @@ section {
 ================================ */
 
 .hero {
-    height: 100vh;
     min-height: 650px;
+    height: auto;
     background-image: url('/assets/img/hero-images/placeholder.webp');
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     background-attachment: scroll;
     color: #FFFFFF;
     display: flex;
@@ -69,6 +69,7 @@ section {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    padding: 120px 20px;
 }
 
 .hero::after {
