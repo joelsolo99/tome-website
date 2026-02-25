@@ -14,49 +14,97 @@ layout: base
 
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Tom Russo</h1>
-        <div class="buttons">
-            <a href="#book-now">Book Now</a>
-            <a href="/about/">About Me</a>
-        </div>
-    </section>
+    <main>
 
-    <!-- About Me Section -->
-    <section class="about" id="about-me">
-        <h2>About Me</h2>
-        <p>I used to be in Nonsensical!</p>
-        <a href="/about/" class="button">Read More</a>
-    </section>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Tom Russo</h1>
 
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <h2>What People Are Saying</h2>
-        <div class="review">
-            <p>"I love listening to him play!"</p>
-            <p class="author">- Monique</p>
-        </div>
-        <div class="review">
-            <p>"He's alright I guess."</p>
-            <p class="author">- Joel</p>
-        </div>
-    </section>
-
-    <!-- Video Links Section -->
-    <section class="videos" id="videos">
-        <h2>Watch My Performances</h2>
-        <div class="video-links">
-            <div class="video-link">
-                <img src="path-to-video-thumbnail.jpg" alt="Performance 1">
-                <p>Performance 1</p>
+                <div class="buttons">
+                    <a href="#book-now" class="button">Book Now</a>
+                    <a href="/about/" class="button secondary">About Me</a>
+                </div>
             </div>
-            <div class="video-link">
-                <img src="path-to-video-thumbnail.jpg" alt="Performance 2">
-                <p>Performance 2</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about" id="about-me">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <p>I used to be in Nonsensical!</p>
+
+                <a href="/about/" class="button">Read More</a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2>What People Are Saying</h2>
+
+                <div class="reviews-grid">
+                    <div class="review">
+                        <blockquote>
+                            <p>"I love listening to him play!"</p>
+                        </blockquote>
+                        <p class="author">- Monique</p>
+                    </div>
+
+                    <div class="review">
+                        <blockquote>
+                            <p>"He's alright I guess."</p>
+                        </blockquote>
+                        <p class="author">- Joel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Links Section -->
+        <section class="videos" id="videos">
+            <div class="container">
+                <h2>Watch My Performances</h2>
+
+                <div class="video-links">
+
+                    <div class="video-link">
+                        <div class="video-thumbnail">
+                            <img src="path-to-video-thumbnail.jpg" alt="Performance 1">
+                        </div>
+                        <p>Performance 1</p>
+                    </div>
+
+                    <div class="video-link">
+                        <div class="video-thumbnail">
+                            <img src="path-to-video-thumbnail.jpg" alt="Performance 2">
+                        </div>
+                        <p>Performance 2</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<script>
+    document.addEventListener("scroll", function () {
+        const scrollY = window.scrollY;
+
+        const hero = document.querySelector(".hero");
+        const about = document.querySelector(".about");
+
+        if (hero) {
+            hero.style.backgroundPositionY = `${scrollY * 0.4}px`;
+        }
+
+        if (about) {
+            about.style.backgroundPositionY = `${scrollY * 0.2}px`;
+        }
+    });
+</script>
 
 </body>
 
