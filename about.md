@@ -12,11 +12,11 @@ permalink: /about/
 
 <section class="about-content">
     <h2>Biography</h2>
-    <p>Placeholder text for biography.</p>
+    <p>Hi my name's tom and my name's tom</p>
 
     <h2>Career</h2>
-    <p>Placeholder text for career highlights.</p>
+    <p>I was in Nonsensical</p>
 
     <h2>Contact</h2>
-    <p>Placeholder text for contact information.</p>
+    <p>Inbox me bab x</p>
 </section>
